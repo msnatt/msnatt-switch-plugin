@@ -7,7 +7,7 @@ cd /d "C:\Users\Admin001\Desktop\Blockly-learning\marklib"
 
 git add .
 git commit -m "%msg%"
-git push origin main
+git push origin master
 
 echo.
 echo Push Complete!
