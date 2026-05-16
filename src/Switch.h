@@ -1,21 +1,34 @@
-#ifndef SWITCH_H
-#define SWITCH_H
+/******************************************************************
+ * Ultrasonic HC-SR04 library for KB-IDE by bavensky
+ ******************************************************************/
+
+#ifndef ultrasonic_h
+#define tultrasonic_h
 
 #include <Arduino.h>
 
-class SWITCH {
 
+#if ARDUINO < 100
+  #include <WProgram.h>
+#else
+  #include <Arduino.h>
+#endif
+
+class ULTRASONIC
+{
 public:
+  ULTRASONIC();
+  ~ULTRASONIC();
 
-  SWITCH();
+  void begin(uint8_t _echo, uint8_t _trig);
+  unsigned int read_distance_cm();
 
-  void begin(int pin);
 
-  void set(bool state);
+protected:
 
 private:
-
-  int _pin;
+  int ECHO, TRIG;
+  long duration = 0, distance = 0;
 };
 
-#endif
+#endif /*ultrasonic_h*/
