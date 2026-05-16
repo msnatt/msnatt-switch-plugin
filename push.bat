@@ -3,7 +3,7 @@ title Auto Push GitHub
 
 set /p msg=Commit Message : 
 
-cd /d ""
+cd /d "C:\Users\Admin001\Desktop\Blockly-learning\marklib"
 
 git add .
 git commit -m "%msg%"
