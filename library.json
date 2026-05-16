@@ -1,6 +1,16 @@
 {
-  "name": "switch-plugin",
+  "name": "msnatt-switch-plugin",
   "title": "Switch",
-  "description": "Simple switch plugin",
-  "version": "1.0.0"
+  "keywords": "ide, esp32, switch",
+  "description": "Switch plugin for KB-IDE",
+  "git": "https://github.com/msnatt/msnatt-switch-plugin",
+  "author": "msnatt",
+  "email": "",
+  "url": "http://www.kbide.org",
+  "version": "1.0.0",
+  "board": "",
+  "platform": ["arduino-esp32"],
+  "license": "",
+  "image": "/static/display.png",
+  "homepage": "http://www.kbide.org"
 }
